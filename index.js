@@ -105,7 +105,7 @@ function getHtmlMenu(arr){
         `
     }).join(" ")
     let ingredient = item.ingredients.join(", ")
-    let classHidden = item.quality == 0 ? 'hidden' : ""
+    let classHidden = item.quality == 0 ? 'hiddenClass' : ""
     let classDark = isDark ? 'commentsDark':"commentsLight" 
     return `<div class="food">
 

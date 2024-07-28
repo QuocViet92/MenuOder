@@ -83,6 +83,9 @@ display: flex;
   display: flex;
   justify-content: center;
 }
+.hiddenClass{
+  visibility: hidden;
+}
 .btn-icr button:active{
   color: red;
 }
@@ -232,4 +235,41 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0; 
+}
+
+@media (max-width: 768px){
+  .container{
+    border: none;
+    border-radius: 0;
+  }
+  #mainFood{
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  .food h2{
+    font-size: 60px;
+    width: 80px;
+  }
+  .info{
+    width: 140px;
+  }
+  .food{
+    gap: 0;
+  }
+  #mainFood button , #mainFood input{
+    font-size: 14px;
+  }
+  #mainFood input{
+    width: 25px;
+  }
+  .card{
+    width: 80%;
+  }
+  .inputBill{
+    width: 90% !important ;
+    margin: 0 auto;
+  }
+  .comments{
+    width: 80%;
+  }
 }
